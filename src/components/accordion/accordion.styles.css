@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  height: 10rem;
+  width: 20rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper button {
+  padding: 1rem 2rem;
+  background-color: black;
+  color: #ddd;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.accordion {
+  width: 600px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.item {
+  background: black;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  border: 1px solid red;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 6px 20px rgba(0, 0, 0, 0.19); /* Dual-layer shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.item:hover {
+  transform: translateY(-5px); /* Slightly raise the tile on hover */
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2), 0 12px 30px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+.title {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content {
+  color: #fff;
+  height: auto;
+}
